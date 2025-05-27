@@ -1,38 +1,41 @@
-"use client";
 import Image from "next/image";
-import videoSectionImage from "../../public/images/video_section.webp";
+import videoBg from "../../public/images/video_section.webp";
 import clinic from "../../public/images/clinic.webp";
+import contact from "../../public/images/contact.png";
 export default function FreeConsultationSection() {
   return (
     <section>
       {/* Watch Video Section */}
       <div className="relative bg-[#001530] text-white overflow-hidden">
+        <Image
+          src={videoBg}
+          alt="Video Background"
+          fill
+          priority
+          className="object-cover object-center absolute top-0 left-0 right-0 w-full h-full"
+        />
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center px-4 py-16 md:py-24">
-          <div className="relative">
-            <Image
-              src={videoSectionImage}
-              alt="Watch Video Background"
-              width={500}
-              height={500}
-              className="w-full max-w-sm mx-auto md:mx-0"
-            />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <button className="bg-[#00B4FF] w-16 h-16 rounded-full flex items-center justify-center shadow-xl">
+          {/* Left side with background image */}
+          <div className="relative h-96 md:h-full w-full flex items-center justify-center">
+            <div className=" flex z-10 text-center">
+              <button className="bg-[#00B4FF] w-20 h-20 rounded-full flex items-center justify-center shadow-xl mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="white"
-                  className="w-6 h-6"
+                  className="w-8 h-8"
                   viewBox="0 0 24 24"
                 >
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </button>
-              <p className="text-white mt-2 text-center font-medium">
+              <p className="text-white mt-6 mx-4 text-lg font-semibold text-white">
                 Watch Video
               </p>
             </div>
           </div>
-          <div className="mt-10 md:mt-0">
+
+          {/* Right side text */}
+          <div className="z-10 mt-10 md:mt-0">
             <p className="text-sm text-[#00B4FF] font-semibold mb-2">
               OUR WATCH VIDEO
             </p>
@@ -57,7 +60,14 @@ export default function FreeConsultationSection() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           {/* Form */}
           <div>
-            <p className="text-sm font-semibold text-[#008FE2] mb-2">
+            <p className="flex text-sm font-semibold text-[#008FE2] mb-2">
+              <Image
+                src={contact}
+                alt="Contact Icon"
+                width={32}
+                height={16}
+                className="mr-2"
+              />
               CONTACT US
             </p>
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -68,30 +78,30 @@ export default function FreeConsultationSection() {
                 <input
                   type="text"
                   placeholder="Your name*"
-                  className="p-3 rounded-md w-full bg-white"
+                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
                 <input
                   type="email"
                   placeholder="Your email*"
-                  className="p-3 rounded-md w-full bg-white"
+                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="Address*"
-                  className="p-3 rounded-md w-full bg-white"
+                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
                 <input
                   type="text"
                   placeholder="Phone*"
-                  className="p-3 rounded-md w-full bg-white"
+                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
               </div>
               <textarea
                 placeholder="Comments"
                 rows={4}
-                className="w-full p-3 bg-white rounded-md resize-none"
+                className="w-full p-3 bg-white rounded-md resize-none placeholder-gray-400"
               />
               <button
                 type="submit"

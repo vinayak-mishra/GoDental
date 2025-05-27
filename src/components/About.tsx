@@ -116,105 +116,52 @@
 // export default About;
 
 import Image from "next/image";
-import mainDoctor from "../../public/images/doctor_main.png";
-import sideDoctor from "../../public/images/side-doctor.png";
-// import dentalTools from "../../public/images/dental-tools.png";
+import About from "../../public/images/about-us.png";
+import AboutUSText from "../../public/images/aboutus-text.png";
+import dentalTools from "../../public/images/dental-tools.png";
 // import xrayBanner from "../../public/images/xray-banner.png";
 import feature1 from "../../public/images/feature-1.png";
+import smile from "../../public/images/smiles.png";
+import trust from "../../public/images/trust.png";
+import done from "../../public/images/done.png";
+import journey from "../../public/images/journey.png";
 export default function HowWeWorkSection() {
   return (
     <section className="bg-white pt-16 pb-20 relative">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-10 items-center">
+      <div className="absolute top-20 right-10  z-10 w-64 h-64">
+        <Image src={dentalTools} alt="Dentist" objectFit="cover" />
+      </div>
+
+      <div className=" max-w-7xl mx-auto px-40 grid md:grid-cols-2 gap-0 items-center">
         {/* Left Side - Images */}
-        <div className="relative">
-          {/* Big Image */}
-          <div className="relative w-[300px] h-[360px] rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={mainDoctor}
-              alt="Dentist"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
 
-          {/* Badge */}
-          <div className="absolute top-[90%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 bg-[#001F4D] text-white rounded-full w-[120px] h-[120px] flex flex-col items-center justify-center text-center text-sm shadow-xl z-10">
-            <span className="font-bold text-xl">25+</span>
-            <span className="text-xs mt-1">Experience</span>
-          </div>
-
-          {/* Small image */}
-          <div className="absolute bottom-[-100px] left-[150px] w-[320px] h-[240px] rounded-lg overflow-hidden shadow-md border-4 border-white">
-            <Image
-              src={sideDoctor}
-              alt="Dentist Chair"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-        </div>
-
-        {/* Right Side - Text Content */}
-        <div className="relative">
-          {/* Side Text */}
-          <div className="absolute left-[-70px] top-10 rotate-[-90deg] text-xs tracking-wider text-[#001F4D] font-medium">
-            How We Work
-          </div>
-
-          {/* Title */}
-          <div className="mb-4">
-            <p className="text-sm font-semibold text-[#008FE2]">OUR ABOUT US</p>
-            <h2 className="text-2xl md:text-3xl font-bold leading-tight mt-2">
-              Take Charge of Your Smile—
-              <span className="text-[#008FE2]">
-                {" "}
-                Get a Zero-Cost Second Opinion
-              </span>{" "}
-              Today!
-            </h2>
-          </div>
-
-          {/* Description */}
-          <p className="text-sm text-gray-600 mb-6">
-            At ZERO DENTAL, we believe everyone deserves to make informed dental
-            decisions, free from confusion and financial worry. That’s why we
-            provide expert second opinions, X-rays, and pickup & drop
-            services—completely free of charge. Discover your best dental
-            options with the support of our caring team at zero cost.
-          </p>
-
-          {/* Bullet Points */}
-          <ul className="space-y-2 text-sm font-semibold text-[#003366] mb-6">
-            <li>• Zero cost second opinion</li>
-            <li>• Zero cost consultation</li>
-            <li>• Zero cost X-Rays and scans</li>
-            <li>• Zero hassle zero cavities</li>
-          </ul>
-
-          {/* CTA Button */}
-          <button className="bg-[#008FE2] hover:bg-[#0075c2] text-white px-6 py-2 rounded-full text-sm font-medium shadow">
-            Book Appointment
-          </button>
+        <Image className="pr-8" src={About} alt="Dentist" objectFit="cover" />
+        <div>
+          <Image src={AboutUSText} alt="Dentist" objectFit="cover" />
         </div>
       </div>
 
       {/* Bottom Stats */}
       <div className="bg-[#001F4D] text-white mt-24 ml-24 py-10 w-[90%] self-center">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="border-r border-white pr-4">
-            <p className="text-2xl font-bold">30000+</p>
+          <div className=" border-r border-white pr-4 flex flex-col items-center justify-center text-center">
+            <Image src={smile} alt="Dentist" objectFit="cover" />
+            <p className="text-2xl font-bold mt-2">30000+</p>
             <p className="text-sm mt-1">Smiles Treated</p>
           </div>
-          <div className="border-r border-white pr-4">
-            <p className="text-2xl font-bold">20+</p>
+          <div className=" border-r border-white pr-4 flex flex-col items-center justify-center text-center">
+            <Image src={trust} alt="Dentist" objectFit="cover" />
+            <p className="text-2xl font-bold mt-2">20+</p>
             <p className="text-sm mt-1">Years of Trust</p>
           </div>
-          <div className="border-r border-white pr-4">
-            <p className="text-2xl font-bold">4,000+</p>
+          <div className=" border-r border-white pr-4 flex flex-col items-center justify-center text-center">
+            <Image src={done} alt="Dentist" objectFit="cover" />
+            <p className="text-2xl font-bold mt-2">4,000+</p>
             <p className="text-sm mt-1">Implants Done</p>
           </div>
-          <div>
-            <p className="text-2xl font-bold">600+</p>
+          <div className="  pr-4 flex flex-col items-center justify-center text-center">
+            <Image src={journey} alt="Dentist" objectFit="cover" />
+            <p className="text-2xl font-bold mt-2">600+</p>
             <p className="text-sm mt-1">Aligner Journeys</p>
           </div>
         </div>
