@@ -88,7 +88,7 @@ export default function HowWeWorkSection() {
       <div className="bg-[#F2F6F9] py-16">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-sm font-semibold text-[#008FE2]">Why Choose Us</p>
-          <h2 className="text-2xl font-bold mt-2 mb-4">
+          <h2 className="text-2xl font-bold mt-2 mb-4 text-black">
             What Makes <span className="text-[#008FE2]">ZERO DENTAL</span>{" "}
             Different?
           </h2>
