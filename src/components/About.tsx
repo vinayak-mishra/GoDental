@@ -121,10 +121,13 @@ import AboutUSText from "../../public/images/aboutus-text.png";
 import dentalTools from "../../public/images/dental-tools.png";
 // import xrayBanner from "../../public/images/xray-banner.png";
 import feature1 from "../../public/images/feature-1.png";
+import pickdrop from "../../public/images/pickdrop.png";
 import smile from "../../public/images/smiles.png";
 import trust from "../../public/images/trust.png";
 import done from "../../public/images/done.png";
 import journey from "../../public/images/journey.png";
+import consult from "../../public/images/consultation.png";
+import paylater from "../../public/images/paylater.png";
 export default function HowWeWorkSection() {
   return (
     <section className="bg-white pt-16 pb-20 relative">
@@ -146,23 +149,23 @@ export default function HowWeWorkSection() {
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className=" border-r border-white pr-4 flex flex-col items-center justify-center text-center">
             <Image src={smile} alt="Dentist" objectFit="cover" />
-            <p className="text-2xl font-bold mt-2">30000+</p>
-            <p className="text-sm mt-1">Smiles Treated</p>
+            <p className="text-white text-2xl font-bold mt-2">30000+</p>
+            <p className="text-white text-sm mt-1">Smiles Treated</p>
           </div>
           <div className=" border-r border-white pr-4 flex flex-col items-center justify-center text-center">
             <Image src={trust} alt="Dentist" objectFit="cover" />
-            <p className="text-2xl font-bold mt-2">20+</p>
-            <p className="text-sm mt-1">Years of Trust</p>
+            <p className="text-white text-2xl font-bold mt-2">20+</p>
+            <p className="text-white text-sm mt-1">Years of Trust</p>
           </div>
           <div className=" border-r border-white pr-4 flex flex-col items-center justify-center text-center">
             <Image src={done} alt="Dentist" objectFit="cover" />
-            <p className="text-2xl font-bold mt-2">4,000+</p>
-            <p className="text-sm mt-1">Implants Done</p>
+            <p className="text-white text-2xl font-bold mt-2">4,000+</p>
+            <p className="text-white text-sm mt-1">Implants Done</p>
           </div>
           <div className="  pr-4 flex flex-col items-center justify-center text-center">
             <Image src={journey} alt="Dentist" objectFit="cover" />
-            <p className="text-2xl font-bold mt-2">600+</p>
-            <p className="text-sm mt-1">Aligner Journeys</p>
+            <p className="text-white text-2xl font-bold mt-2">600+</p>
+            <p className="text-white text-sm mt-1">Aligner Journeys</p>
           </div>
         </div>
       </div>
@@ -187,35 +190,39 @@ export default function HowWeWorkSection() {
               {
                 title: "Zero Cost, Zero Pressure",
                 desc: "Get expert validation on your treatment plan from experienced professionals.",
+                image: feature1,
               },
               {
                 title: "Free Consultations & X-Rays",
                 desc: "No hidden charges, just honest, expert guidance.",
+                image: consult,
               },
               {
                 title: "Free Pick-Up & Drop-Off",
                 desc: "Hassle-free transportation to our partner clinics for your convenience.",
+                image: pickdrop,
               },
               {
                 title: "0% EMI & ‘Smile Now, Pay Later",
                 desc: "Making advanced dental care affordable and stress-free.",
+                image: paylater,
               },
             ].map((item, index) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
               >
-                <div className="w-10 h-10 bg-[#001F4D] text-white rounded-full flex items-center justify-center text-sm font-bold mb-4">
+                <div className="w-10 h-10  text-white rounded-full flex items-center justify-center text-sm font-bold mb-4">
                   <Image
-                    src={feature1}
+                    src={item.image}
                     alt={`Feature ${index + 1}`}
-                    width={32}
-                    height={32}
+                    width={44}
+                    height={44}
                   />
                   {/* {String.fromCharCode(65 + index)} */}
                 </div>
-                <h3 className="font-bold text-[#001F4D] mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.desc}</p>
+                <h3 className="font-bold  mb-2 text-black">{item.title}</h3>
+                <p className="text-sm text-black font-normal">{item.desc}</p>
               </div>
             ))}
           </div>

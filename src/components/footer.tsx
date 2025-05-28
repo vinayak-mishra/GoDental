@@ -111,7 +111,7 @@
 
 import Image from "next/image";
 import { Facebook, Instagram, Youtube, X } from "lucide-react";
-import dentalLogo from "../../public/images/dental_logo.png"; // Adjust the path as necessary
+import dentalLogo from "../../public/images/logo-white.png"; // Adjust the path as necessary
 export default function Footer() {
   return (
     <footer className="bg-[#031944] text-white pt-12 pb-6 relative">
