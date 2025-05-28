@@ -12,6 +12,7 @@ import journey from "../../public/images/journey.png";
 import consult from "../../public/images/consultation.png";
 import paylater from "../../public/images/paylater.png";
 import vector from "../../public/images/vector.png";
+import contact from "../../public/images/contact.png";
 export default function HowWeWorkSection() {
   return (
     <section className="bg-white pt-16 pb-20 relative">
@@ -87,19 +88,39 @@ export default function HowWeWorkSection() {
       </div>
       <div className="bg-[#F2F6F9] py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <p className="text-sm font-semibold text-[#008FE2]">Why Choose Us</p>
-          <h2 className="text-2xl font-bold mt-2 mb-4 text-black">
-            What Makes <span className="text-[#008FE2]">ZERO DENTAL</span>{" "}
-            Different?
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <p className="text-sm text-gray-700 leading-relaxed">
-              With ZERO DENTAL, you never have to worry about misdiagnosis,
-              overcharging, or unnecessary treatments. We empower you to make
-              the right choices for your dental health—without spending a rupee
-              on consultations or second opinions.
-            </p>
-          </div>
+          <p className=" flex text-sm font-semibold text-[#008FE2] mb-2">
+            <div className="w-[60%]">
+              <div>
+                <p className="flex">
+                  <Image
+                    src={contact}
+                    objectFit="contain"
+                    alt="Contact Icon"
+                    // width={32}
+                    // height={16}
+                    className="mr-2"
+                  />
+                  Why choose us
+                </p>
+              </div>
+              <h2 className="text-2xl font-bold mt-8  mb-4 text-black">
+                What Makes <span className="text-[#008FE2]">ZERO DENTAL</span>{" "}
+                Different?
+              </h2>
+            </div>
+
+            <div className="flex-1">
+              <p className="text-sm text-gray-700 leading-relaxed">
+                With ZERO DENTAL, you never have to worry about misdiagnosis,
+                overcharging, or unnecessary treatments. We empower you to make
+                the right choices for your dental health—without spending a
+                rupee on consultations or second opinions.
+              </p>
+            </div>
+          </p>
+          {/* <p className="text-sm font-semibold text-[#008FE2]">Why Choose Us</p> */}
+
+          <div className="grid md:grid-cols-2 gap-8"></div>
 
           <div className="grid md:grid-cols-4 gap-6 mt-10">
             {[
