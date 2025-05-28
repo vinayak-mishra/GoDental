@@ -70,38 +70,38 @@ export default function FreeConsultationSection() {
               />
               CONTACT US
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            <h2 className="text-2xl mt-4 text-black md:text-3xl font-bold mb-6">
               Book My Free Consultation – Zero Cost, Zero Pressure
             </h2>
-            <form className="space-y-4">
+            <form className="space-y-4 mt-4">
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="Your name*"
-                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
+                  className="text-black p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
                 <input
                   type="email"
                   placeholder="Your email*"
-                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
+                  className="text-black p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="Address*"
-                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
+                  className="text-black p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
                 <input
                   type="text"
                   placeholder="Phone*"
-                  className="p-3 rounded-md w-full bg-white placeholder-gray-400"
+                  className="text-black p-3 rounded-md w-full bg-white placeholder-gray-400"
                 />
               </div>
               <textarea
                 placeholder="Comments"
                 rows={4}
-                className="w-full p-3 bg-white rounded-md resize-none placeholder-gray-400"
+                className="text-black w-full p-3 bg-white rounded-md resize-none placeholder-gray-400"
               />
               <button
                 type="submit"

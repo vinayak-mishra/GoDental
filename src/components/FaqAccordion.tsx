@@ -287,11 +287,11 @@ export default function FAQSection() {
 
   return (
     <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-3 gap-12 items-start">
+      <div className="max-w-7xl  mx-auto px-4 md:px-8 grid md:grid-cols-3 gap-12 items-start">
         {/* FAQ content centered */}
-        <div className="md:col-span-2 flex justify-center">
+        <div className="relative left-[25%] right-[10%] md:col-span-2 flex justify-center">
           <div className="max-w-3xl w-full">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">
               Frequently asked question
             </h2>
             <p className="text-gray-500 text-center mb-10">
@@ -300,7 +300,7 @@ export default function FAQSection() {
               ultrices. Duis sed semper facilisis non amet
             </p>
 
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className=" grid md:grid-cols-2 gap-4">
               {faqData.map((item, index) => {
                 const isOpen = openIndex === index;
                 return (
@@ -338,7 +338,7 @@ export default function FAQSection() {
             alt="Dental Tools"
             width={400}
             height={400}
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain relative left-20 top-40"
           />
         </div>
       </div>

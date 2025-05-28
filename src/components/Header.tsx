@@ -44,7 +44,7 @@
 import Image from "next/image";
 import dentalLogo from "../../public/images/dental_logo.png";
 
-import { Mail, Facebook, Instagram, X, Phone } from "lucide-react";
+import { Mail, Facebook, Instagram, X, Phone, Youtube } from "lucide-react";
 // export default Header;
 
 const Header = () => {
@@ -63,18 +63,30 @@ const Header = () => {
           </div>
         </div>
         <div className="flex gap-4 items-center pr-16">
-          <Facebook
-            className="w-[20px] h-[20px] p-1  hover:text-sky-400 cursor-pointer bg-[#475F8D] rounded-4xl"
-            size={16}
-          />
-          <Instagram
-            className="w-[20px] h-[20px] p-1  hover:text-sky-400 cursor-pointer bg-[#475F8D] rounded-4xl"
-            size={14}
-          />
-          <X
-            className="w-[20px] h-[20px] p-[.5px]  hover:text-sky-400 cursor-pointer bg-[#475F8D] rounded-4xl"
-            size={12}
-          />
+          <a
+            href="#"
+            className="hover:text-sky-400 rounded-4xl bg-[#475F8D] p-2"
+          >
+            <Facebook size={20} />
+          </a>
+          <a
+            href="#"
+            className="hover:text-sky-400 rounded-4xl bg-[#475F8D] p-2"
+          >
+            <Instagram size={20} />
+          </a>
+          <a
+            href="#"
+            className="hover:text-sky-400 rounded-4xl bg-[#475F8D] p-2"
+          >
+            <X size={20} />
+          </a>
+          <a
+            href="#"
+            className="hover:text-sky-400 rounded-4xl bg-[#475F8D] p-2"
+          >
+            <Youtube size={20} />
+          </a>
           {/* <Pinterest className="hover:text-red-400 cursor-pointer" size={16} /> */}
         </div>
       </div>
